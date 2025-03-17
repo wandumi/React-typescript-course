@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* app.css */
+.center-container {
+  @apply flex items-center justify-center h-screen;
+}
