@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <main className="flex items-center justify-center min-h-screen bg-white m-10">
-        <div className="bg-gray-600 p-8 rounded-lg shadow-xl w-full max-w-2xl text-white">
+        <div className="bg-black p-8 rounded-lg shadow-xl w-full max-w-2xl text-white">
           <Header image={{ src: svg, alt: "list of goals" }}>
             <h1 className="text-center text-2xl font-semibold">Your Course Goals</h1>
           </Header>
