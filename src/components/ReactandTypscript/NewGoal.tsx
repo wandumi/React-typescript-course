@@ -22,28 +22,28 @@ function NewGoal({onAddGoal}: NewGoalProps) {
 
     return  <form 
     onSubmit={handleSubmit} 
-    className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg space-y-2"
+    className="max-w-2xl mx-auto rounded-sm space-y-2"
   >
     <div className="flex flex-col">
-      <label htmlFor="goal" className="text-lg text-black font-semibold mb-2">Your Goal</label>
+      <label htmlFor="goal" className="text-sm text-white">Your Goal</label>
       <input 
         id="goal" 
         type="text" 
         ref={goal} 
-                className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 
-                        focus:ring-blue-400 text-black"
+                className="p-2 border border-gray-300  bg-gray-300 rounded-sm focus:outline-none focus:ring-2 
+                        focus:ring-blue-100 text-black mb-4"
         placeholder="Enter your goal"
       />
     </div>
     
     <div className="flex flex-col">
-      <label htmlFor="summary" className="text-lg text-black font-semibold mb-2">Short Summary</label>
+      <label htmlFor="summary" className="text-sm text-white">Short Summary</label>
       <input 
         id="summary" 
         type="text" 
         ref={summary} 
-        className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 
-                  focus:ring-blue-400 text-black"
+        className="p-2 border border-gray-300 bg-gray-300 rounded-sm focus:outline-none focus:ring-2 
+                  focus:ring-blue-100 text-black mb-4"
         placeholder="Short summary of your goal"
       />
     </div>
@@ -51,8 +51,8 @@ function NewGoal({onAddGoal}: NewGoalProps) {
     <div className="flex justify-center">
       <button 
         type="submit" 
-        className="w-full px-6 py-2 bg-gray-600 text-white font-semibold rounded-lg 
-                  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="w-full px-6 py-2 bg-yellow-200 text-black font-semibold rounded-sm 
+                  hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
       >
         Add Goal
       </button>

@@ -8,7 +8,7 @@ interface CourseGoalProps {
 
 export default function CourseGoal({ id, title, description, onDelete }: CourseGoalProps ) {
     return (
-        <article className="p-5 text-black rounded-lg relative">
+        <article className="p-5 text-black rounded-sm relative">
             <div className="mb-10">
                 <h2 className="text-lg font-semibold">{title}</h2>
                 <p className="text-sm text-gray-600">{description}</p>

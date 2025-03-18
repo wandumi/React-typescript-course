@@ -10,7 +10,7 @@ type CourseGoalListProps = {
 }
 function CourseGoalList({goals, onDeleteGoal}: CourseGoalListProps) {
     return (
-        <ul className={`grid gap-4 mt-5 p-5 bg-gray-500 rounded-lg grid-cols-1 ${goals.length > 1 ? "md:grid-cols-2" : ""}`}>
+        <ul className={`grid gap-4 mt-5 p-5 bg-gray-500 rounded-sm grid-cols-1 ${goals.length > 1 ? "md:grid-cols-2" : ""}`}>
         {goals.map((goal) => (
             <li key={goal.id} className="p-4 bg-white rounded-lg">
                 <CourseGoal
