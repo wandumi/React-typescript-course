@@ -1,11 +1,11 @@
-import { ComponentPropsWithoutRef } from "react";
+import { forwardRef, ComponentPropsWithoutRef } from "react";
 
 type InputProps = {
     label: string;
     id: string;
 } & ComponentPropsWithoutRef<'input'>
 
-function Input({label, id, ...props }:InputProps) {
+const Input = forwardRef<HTMLInputElement, InputProps>(function Input({label, id, ...props }, ref) {
   return (
     
     <div className="flex flex-col">
@@ -15,9 +15,11 @@ function Input({label, id, ...props }:InputProps) {
             className="p-2 border border-gray-300 bg-gray-300 rounded-sm focus:outline-none focus:ring-2 
                     focus:ring-blue-100 text-black mb-4 w-full"
             {...props}
+            ref={ref}
+            name={id}
         />
     </div>
   )
-}
+})
 
 export default Input
