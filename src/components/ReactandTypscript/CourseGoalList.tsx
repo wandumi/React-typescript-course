@@ -15,7 +15,7 @@ function CourseGoalList({ goals, onDeleteGoal }: CourseGoalListProps) {
     let hintBox: ReactNode
     let warningBox: ReactNode
 
-    if (goals?.length === 0) {
+    if (goals.length === 0) {
         hintBox = <InfoBox mode="hint">You have no course goals yet. Start adding some</InfoBox>
     }
 
